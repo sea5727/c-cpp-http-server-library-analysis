@@ -58,3 +58,26 @@
 ## http 2
 
 1. [nghttp2](https://nghttp2.org/documentation/index.html)
+-   start 3.6k
+-   license : MIT Lisence
+c 언어로 만들어진 http2 라이브러리.
+c++ boost asio 와 래핑하여 사용 가능, libev, libevent 사용 
+
+
+nghttp, nghttpd, nghttpxx 및 h2load 를 빌드, 실행하려면
+OpenSSL
+libev
+zlib
+libc-ares
+libxml2
+libsystemd-dev
+jansson
+libevent-openssl
+jemalloc
+libboost-dev
+libboost-thread-dev
+
+
+
+추가 ( c++ 도 사용할 경우)
+
