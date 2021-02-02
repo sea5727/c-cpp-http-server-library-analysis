@@ -16,6 +16,7 @@ include_directories(/usr/local/include/uWebSockets ${PROJECT_SOURCE_DIR}/uSocket
 # add_subdirectory(uWebSockets)
 # add_subdirectory(beast)
 add_subdirectory(nghttp2)
+add_subdirectory(crow)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
