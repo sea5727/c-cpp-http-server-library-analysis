@@ -1,3 +1,4 @@
+#include <vector>
 #include "inc.hpp"
 
 void
@@ -35,17 +36,7 @@ class const_str
     }
 };
 
-const char * const testf = "test";
-constexpr char mytestf( unsigned i ) { 
-        
-    return requires_in_range(0, 10), testf[0]; 
-}
-char mytestf2(unsigned i) {
-    return 0, testf[0]; 
-}
-int mytestf3(unsigned i){
-    return 0, 1;
-}
+
 int main(int argc, char*argv[]) {
 
     std::cout << "crow-tutorial" << std::endl;
@@ -66,6 +57,10 @@ int main(int argc, char*argv[]) {
     
     // black_magic::const_str str("myteststring");
     // str[0];
+
+    std::vector<std::string> * testv = new std::vector<std::string>;
+
     
     return 0;
 }
+
