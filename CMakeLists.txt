@@ -10,12 +10,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED on)
 include(CTest)
 enable_testing()
 
-link_libraries(ssl crypto nghttp2)
+# link_libraries(ssl crypto nghttp2)
+link_libraries(z pthread ssl crypto)
 include_directories(/usr/local/include/uWebSockets ${PROJECT_SOURCE_DIR}/uSockets/src)
 
 # add_subdirectory(uWebSockets)
 # add_subdirectory(beast)
-add_subdirectory(nghttp2)
+#add_subdirectory(nghttp2)
 add_subdirectory(crow)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
