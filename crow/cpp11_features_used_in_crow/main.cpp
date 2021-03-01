@@ -15,16 +15,6 @@ int myconstchar(const char * arr, int n){
 }
 int main(int argc, char * argv[]){
 
-    ulong n = atoi(argv[1]);
-    ulong v = 0;
-    printf("n:%lu\n", n);
-    v = fact2(n);
-
-    printf("n:%lu\n", v);
-
-
-    myconstchar("mytest");
-
 
     return 0;
 }
